@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PHP CRUD PPLG1</title>
+    <title>PHP CRUD - PPLG1</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -81,7 +81,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="siswa.php">Siswa</a>
+                        <a class="collapse-item" href="utilities-color.html">Siswa</a>
                         <a class="collapse-item" href="utilities-border.html">Kelas</a>
                         <a class="collapse-item" href="utilities-animation.html">Jurusan</a>
                     </div>
@@ -177,104 +177,33 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <!-- Page Heading v-->
+                    <h1 class="h3 mb-4 text-gray-800">Tambah Data Siswa SMKN 1 Ciomas</h1>
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Halaman Siswa</h1>
-                    <br>
-                    <div class="row">
-                        <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <a href="tambahsiswa.php" class="btn btn-primary">Tambah Data</a>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nisn</th>
-                                            <th>Nama Siswa</th>
-                                            <th>Email</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>0098435</td>
-                                            <td>Ardilla</td>
-                                            <td>ardilla@gmail.com</td>
-                                            <td>Perempuan</td>
-                                            <td>
-                                                <a href="editsiswa.php" class="btn btn-success btn-sa"><i class="fa fa-edit"></i></a>
-                                                <button class="btn btn-danger btn-sa"><i class="fa fa-trash"></i></button>
-                                            </td>
-                                        
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- /.form -->
+                     <form action="">
+                    <label for="inputNamaSiswa5" class="form-label">Nama Siswa</label>
+                    <input type="NamaSiswa" id="inputNamaSiswa5" class="form-control" aria-describedby="NamaSiswaHelpBlock">
+                    <div id="NamaSiswaHelpBlock" class="form-text"></div>
 
+                    <label for="NISNPassword5" class="form-label">NISN</label>
+                    <input type="NISN" id="inputNISN5" class="form-control" aria-describedby="NISNHelpBlock">
+                    <div id="NISNHelpBlock" class="form-text"></div>
+
+                    <label for="inputEmail5" class="form-label">Email</label>
+                    <input type="Email" id="inputEmail5" class="form-control" aria-describedby="EmailHelpBlock">
+                    <div id="EmailHelpBlock" class="form-text"></div>
+
+                    <label for="inputJenisKelamin5" class="form-label">Jenis Kelamin</label>
+                    <input type="Jenis Kelamin" id="inputJenisKelamin5" class="form-control" aria-describedby="JenisKelaminHelpBlock">
+                    <div id="JenisKelaminHelpBlock" class="form-text"></div>
+
+                 </form>
+                 <br>
+                 <button class="btn btn-primary">Simpan Data</button>
                 </div>
-                    <!-- Earnings (Monthly) Card Example
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Siswa</div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">150 Orang</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Kelas</div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">10 Ruangan</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Kompetensi Keahlian</div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">5 Jurusan</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        -->
 
-
-                </div>
+                
                 <!-- /.container-fluid -->
 
             </div>
