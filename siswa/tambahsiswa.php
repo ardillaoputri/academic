@@ -194,9 +194,9 @@
                     <input type="Email" id="inputEmail5" class="form-control" aria-describedby="EmailHelpBlock">
                     <div id="EmailHelpBlock" class="form-text"></div>
 
-                    <label for="inputPassword5" class="form-label">Jenis Kelamin</label>
-                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                    <div id="passwordHelpBlock" class="form-text"></div>
+                    <label for="inputJenisKelamin5" class="form-label">Jenis Kelamin</label>
+                    <input type="Jenis Kelamin" id="inputJenisKelamin5" class="form-control" aria-describedby="JenisKelaminHelpBlock">
+                    <div id="JenisKelaminHelpBlock" class="form-text"></div>
 
                  </form>
                  <br>
