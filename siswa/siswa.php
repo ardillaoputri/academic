@@ -204,7 +204,7 @@
                                     include '../db.php';
                                     $i = 1;
                                     $data = mysqli_query($db, "SELECT * FROM siswa");
-                                    while($d = mysqli_fetch_array($data))
+                                    while($d = mysqli_fetch_array($data)){
                                         ?>
                                 
                                     <tbody>
@@ -219,7 +219,10 @@
                                                 <button class="btn btn-danger btn-sa"><i class="fa fa-trash"></i></button>
                                             </td>
                                         </tr>
-
+                                        <?php
+                                        }
+                                        ?>
+                                        
                                     </tbody>
                                 </table>
                             </div>
