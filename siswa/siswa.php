@@ -203,7 +203,7 @@
                                     <?php
                                     include '../db.php';
                                     $i = 1;
-                                    $data = mysqli_query($db, "SELECT * FROM siswa");
+                                    $data = mysqli_query($koneksi, "SELECT * FROM siswa");
                                     while($d = mysqli_fetch_array($data)){
                                         ?>
                                 
@@ -222,7 +222,7 @@
                                         <?php
                                         }
                                         ?>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
