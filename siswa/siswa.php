@@ -193,27 +193,33 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nisn</th>
                                             <th>Nama Siswa</th>
+                                            <th>NISN</th>
                                             <th>Email</th>
                                             <th>Jenis Kelamin</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
+                                    <?php
+                                    include '../db.php';
+                                    $i = 1;
+                                    $data = mysqli_query($db, "SELECT * FROM siswa");
+                                    while($d = mysqli_fetch_array($data))
+                                        ?>
                                 
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>0098435</td>
-                                            <td>Ardilla</td>
-                                            <td>ardilla@gmail.com</td>
-                                            <td>Perempuan</td>
+                                            <td>?php echo $i++ ?</td>
+                                            <td>?php echo $d['nama'] ?</td>
+                                            <td>?php echo $d['nisn'] ?</td>
+                                            <td>?php echo $d['email'] ?</td>
+                                            <td>?php echo $d['jk'] ?</td>
                                             <td>
                                                 <a href="editsiswa.php" class="btn btn-success btn-sa"><i class="fa fa-edit"></i></a>
                                                 <button class="btn btn-danger btn-sa"><i class="fa fa-trash"></i></button>
                                             </td>
-                                        
                                         </tr>
+
                                     </tbody>
                                 </table>
                             </div>
